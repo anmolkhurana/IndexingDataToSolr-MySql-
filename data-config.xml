@@ -1,0 +1,15 @@
+<dataConfig>
+<dataSource type="JdbcDataSource" 
+            driver="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/test" 
+            user="admin" 
+            password="admin123"/>
+<document>
+  <entity name="person" query="SELECT * FROM person">
+     <field column="ID" name="id"/>    
+	 <field column="FNAME" name="firstname"/>    
+     <field column="LNAME" name="lastname"/>    
+     <field column="TOWN" name="town"/>       
+  </entity>
+</document>
+</dataConfig>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<schema name="test">
+  <fields> 
+   <field name="firstname" type="string" indexed="true" stored="true"/>
+   <field name="lastname" type="string" indexed="true" stored="true"/>
+   <field name="town" type="string" indexed="true" stored="true"/>
+  </fields>  
+  
+  <types>
+	<fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+  </types>
+</schema>
